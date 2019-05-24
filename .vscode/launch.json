@@ -1,0 +1,130 @@
+{
+        // 使用 IntelliSense 了解相关属性。 
+        // 悬停以查看现有属性的描述。
+        // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+                {
+                        "name": "(gdb) win_gcc",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_win_gcc",
+                        "program": "${fileDirname}/a.exe",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "gdb",
+                        "miDebuggerPath": "gdb.exe",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for gdb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                },
+                {
+                        "name": "(gdb) win_g++",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_win_g++",
+                        "program": "${fileDirname}/a.exe",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "gdb",
+                        "miDebuggerPath": "gdb.exe",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for gdb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                },
+                {
+                        "name": "(gdb) gcc",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_gcc",
+                        "program": "${fileDirname}/a.out",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "gdb",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for gdb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                },
+                {
+                        "name": "(gdb) g++",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_g++",
+                        "program": "${fileDirname}/a.out",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "gdb",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for gdb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                },
+                {
+                        "name": "(lldb) clang",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_clang",
+                        "program": "${fileDirname}/a.out",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "lldb",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for lldb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                },
+                {
+                        "name": "(lldb) clang++",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "preLaunchTask": "build_clang++",
+                        "program": "${fileDirname}/a.out",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${fileDirname}",
+                        "environment": [],
+                        "externalConsole": true,
+                        "MIMode": "lldb",
+                        "setupCommands": [
+                                {
+                                        "description": "Enable pretty-printing for lldb",
+                                        "text": "-enable-pretty-printing",
+                                        "ignoreFailures": true
+                                }
+                        ]
+                }
+        ]
+}

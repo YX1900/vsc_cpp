@@ -1,0 +1,53 @@
+{
+    "env": {
+        "Comment": "<Edit-MinGWRootPath-and-MinGWVersion>",
+        "MinGWRootPath": "D:/SoftwareInstallation/MinGW-w64/MinGW-w64-8.1.0/mingw64",
+        "MinGWVersion": "8.1.0",
+        "MinGWIncludePath": [
+            "${MinGWRootPath}/include/**",
+            "${MinGWRootPath}/x86_64-w64-mingw32/include/**",
+            "${MinGWRootPath}/lib/gcc/x86_64-w64-mingw32/${MinGWVersion}/include/**",
+            "${MinGWRootPath}/lib/gcc/x86_64-w64-mingw32/${MinGWVersion}/include/c++/**"
+        ],
+        "MinGWCompilerPath": "${MinGWRootPath}/bin/gcc.exe",
+        "ExIncludePath": [],
+        "ExGWCompilerPath": ""
+    },
+    "configurations": [
+        {
+            "name": "Win_GCC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${MinGWIncludePath}",
+                "${ExIncludePath}"
+            ],
+            "defines": [],
+            "compilerPath": "${MinGWCompilerPath}",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "GCC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${ExIncludePath}"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "CLANG",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${ExIncludePath}"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
